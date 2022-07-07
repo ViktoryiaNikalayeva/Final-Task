@@ -1,0 +1,22 @@
+version: "3"
+services:
+  web-tomcat:
+    ports:
+      - 8080:8080
+    build:
+      context: ../..
+      args:
+        - GIT_USR=<ViktoryiaNikalayeva>
+        - GIT_PWD=<PasswordforGitHub>
+    links:
+      - db
+
+  db:
+    image: mysql:5.7
+    ports:
+      - 3360:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=PasswordforMySQL
+      - MYSQL_USER=login
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=union_reporting

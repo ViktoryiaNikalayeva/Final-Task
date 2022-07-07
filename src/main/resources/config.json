@@ -1,0 +1,6 @@
+{
+  "urlApi" : "localhost:8080/api",
+  "jsScript" : "$('#addProject').modal('hide');",
+  "characters" : "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+  "screenshots" : "src/main/resources/screenshots"
+}
