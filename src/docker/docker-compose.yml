@@ -6,8 +6,8 @@ services:
     build:
       context: ../..
       args:
-        - GIT_USR=<ViktoryiaNikalayeva>
-        - GIT_PWD=<PasswordforGitHub>
+        - GIT_USR=<***********************>
+        - GIT_PWD=<*********************>
     links:
       - db
 
@@ -16,7 +16,7 @@ services:
     ports:
       - 3360:3306
     environment:
-      - MYSQL_ROOT_PASSWORD=PasswordforMySQL
+      - MYSQL_ROOT_PASSWORD=***************
       - MYSQL_USER=login
       - MYSQL_PASSWORD=password
       - MYSQL_DATABASE=union_reporting
